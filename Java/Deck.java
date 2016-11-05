@@ -1,4 +1,4 @@
-public class DeckOfCards {
+public class Deck {
 	     public static void main(String[] args) {
               int[] deck = new int[104];
 		          String[] suits = {"Clubs", "Diamond", "Heart", "Spade", "Clubs", "Diamond", "Heart", "Spade"};
