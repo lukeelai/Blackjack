@@ -34,6 +34,42 @@ void shuffle(int card){
         case 12:
             printf("%2s","King");
             break;
+        case 14:
+            printf("%2s","Ace");
+            break;
+        case 15:
+            printf("%2s","2");
+            break;
+        case 16:
+            printf("%2s","3");
+            break;
+        case 17:
+            printf("%2s","4");
+            break;
+        case 18:
+            printf("%2s","6");
+            break;
+        case 19:
+            printf("%2s","7");
+            break;
+        case 20:
+            printf("%2s","8");
+            break;
+        case 21:
+            printf("%2s","9");
+            break;
+        case 22:
+            printf("%2s","10");
+            break;
+        case 23:
+            printf("%2s","Jack");
+            break;
+        case 24:
+            printf("%2s","Queen");
+            break;
+        case 25:
+            printf("%2s","King");
+            break;
         default:
             printf("%2d",card%26+1);
     }printf(" of %s\n",suit[card/26]);
