@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define CARDS 52
+#define CARDS 104
 #define DRAW 2
 
 void shuffle(int card);
@@ -14,14 +14,14 @@ int main(){
 
     for(i = 0; i < DRAW; i++){
         index = rand() % CARDS;
-        showcard(index);
+        shuffle(index);
     }return(0);
 }
 
 void shuffle(int card){
-    char *suit[4] = { "Clubs", "Diamond", "Heart", "Spade" };
+    char *suit[8] = { "Clubs", "Diamond", "Heart", "Spade", "Clubs", "Diamond", "Heart", "Spade" };
 
-    switch(card%13){
+    switch(card%26){
         case 0:
             printf("%2s","Ace");
             break;
@@ -35,6 +35,6 @@ void shuffle(int card){
             printf("%2s","King");
             break;
         default:
-            printf("%2d",card%13+1);
-    }printf(" of %s\n",suit[card/13]);
+            printf("%2d",card%26+1);
+    }printf(" of %s\n",suit[card/26]);
 }
